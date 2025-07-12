@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Anime Memory Card Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <video autoplay muted loop id="bg-video">
+    <source src="assets/video/anime-loop.mp4" type="video/mp4">
+  </video>
+
+  <div class="overlay">
+    <h1 class="fade-in">🧠 Anime Memory Card Game 🎌</h1>
+    <div id="hud">
+      <span id="timer">⏱ 0s</span>
+      <span id="score">✅ 0</span>
+      <button id="mute">🔊</button>
+    </div>
+    <div class="memory-game" id="game-board"></div>
+    <button id="restart" style="display:none;">🔁 Play Again</button>
+    <footer class="typing">
+      Made by Prateek Srivastava | 📧 srivastavaprateek102@gmail.com |
+      <a href="https://www.linkedin.com/in/prateek-srivastava-a9717b212/" target="_blank">LinkedIn</a>
+    </footer>
+    <audio id="bgm" src="assets/sounds/bgm.mp3" loop></audio>
+    <audio id="flip-sound" src="assets/sounds/flip.mp3"></audio>
+    <audio id="match-sound" src="assets/sounds/match.mp3"></audio>
+    <audio id="win-sound" src="assets/sounds/win.mp3"></audio>
+    <script src="index.js"></script>
+  </div>
+</body>
+</html>
